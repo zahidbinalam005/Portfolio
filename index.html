@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Md Zahid Bin Alam | GRC &amp; Cybersecurity Projects</title>
+<meta name="description" content="Hands-on GRC and cybersecurity projects by Md Zahid Bin Alam: NIST RMF, FIPS 199, risk assessment and control evidence.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#top">zahid<span>@grc</span>:~$</a>
+  <button class="menu" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  <nav>
+    <a href="#about">About</a><a href="#projects">Projects</a><a href="#competitions">Competitions</a>
+    <a href="#learning">Practical</a><a href="#certifications">Certifications</a><a href="#community">Community</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero wrap">
+  <div>
+    <p class="kicker">MSc Computational Sciences, Laurentian University</p>
+    <h1>Md Zahid Bin Alam</h1>
+    <p class="headline">Aspiring GRC analyst. I assess risk, ask for evidence, and write the memo a decision-maker can act on.</p>
+    <p class="lead">Below are two end-to-end governance, risk and compliance projects. Each one has the report, the working files and screenshots, so you can check the work rather than take my word for it.</p>
+    <div class="actions">
+      <a class="btn primary" href="#projects">View projects</a>
+      <a class="btn" href="https://github.com/zahidbinalam005" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/md-zahid-bin-alam-892799145" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="mailto:zahidbinalam005@gmail.com">Email</a>
+    </div>
+  </div>
+  <div class="term" aria-label="Sample output from my projects">
+    <div class="term-bar"><i></i><i></i><i></i><span>grc-playground (simulation)</span></div>
+<pre><span class="c">$ cat civictrack/authorization-decision.yaml</span>
+system: CivicTrack Analytics
+decision: <b>ATO with conditions</b>
+open_findings: F-001, F-002 <span class="c"># Moderate</span>
+critical: F-004 <span class="c"># risk memo sent to AO</span>
+
+<span class="c">$ cat fips199/categorization-memo.md</span>
+BenefitPortal        <b>High</b>
+InternalScheduler    <b>Low</b>
+EmergencyAlertSystem <b>High</b>
+status: signed by Authorizing Official<span class="cur"></span></pre>
+  </div>
+</section>
+
+<section id="about" class="wrap">
+  <h2>About</h2>
+  <div class="about">
+    <p>I'm a Master's student in Computational Sciences at Laurentian University in Sudbury, working toward a career in Governance, Risk and Compliance and IT risk management.</p>
+    <p>What I enjoy most is the judgment part of GRC: working out how much harm a failure would really cause, picking controls that fit the system instead of ticking every box, and asking for proof rather than accepting a promise. I like writing short, defensible reasons that an auditor or an Authorizing Official can check quickly.</p>
+    <p><strong>Right now</strong> I'm building hands-on projects around NIST RMF, FIPS 199, ISO 27001 and NIST CSF, and preparing for CompTIA Security+. I hold the Google Cybersecurity Certificate and have completed the TCS Cybersecurity Job Simulation.</p>
+    <p><strong>Goal:</strong> GRC or IT risk analyst, helping organizations find, assess and reduce cybersecurity risk while keeping governance and compliance strong.</p>
+  </div>
+</section>
+
+<section id="projects" class="wrap">
+  <h2>Projects</h2>
+  <p class="sub">Select a project for the full story: why I did it, what I did, the outcome, and the evidence.</p>
+  <div id="project-grid" class="grid"></div>
+</section>
+
+<section id="competitions" class="wrap">
+  <h2>Cybersecurity competitions</h2>
+  <p class="sub">CTFs, hackathons and competitions.</p>
+  <div id="comp-grid" class="grid"></div>
+</section>
+
+<section id="learning" class="wrap">
+  <h2>Practical learning</h2>
+  <p class="sub">Hands-on labs, kept separate from certifications.</p>
+  <div id="learning-box"></div>
+</section>
+
+<section id="certifications" class="wrap">
+  <h2>Certifications</h2>
+  <div id="cert-grid" class="grid"></div>
+</section>
+
+<section id="community" class="wrap">
+  <h2>Achievements and community</h2>
+  <div id="community-grid" class="grid"></div>
+</section>
+
+<section id="contact" class="wrap">
+  <h2>Contact</h2>
+  <p class="sub">Open to GRC, IT risk and security analyst opportunities in Canada.</p>
+  <div class="actions">
+    <a class="btn primary" href="mailto:zahidbinalam005@gmail.com">Send an email</a>
+    <button class="btn" id="copy-email" type="button">Copy email address</button>
+    <a class="btn" href="https://www.linkedin.com/in/md-zahid-bin-alam-892799145" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://github.com/zahidbinalam005" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</section>
+</main>
+
+<footer class="wrap foot">Md Zahid Bin Alam · Sudbury, Ontario · Projects were completed in the GRC Playground simulation environment.</footer>
+
+<dialog id="project-dialog" aria-label="Project details"></dialog>
+<dialog id="lightbox" aria-label="Screenshot"></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
